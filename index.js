@@ -1,4 +1,7 @@
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
+const fs = require('fs');
+const path = require('path');
 
 // array of questions for user
 const questions = () => {
@@ -6,6 +9,19 @@ const questions = () => {
         {
             type: 'input',
             name: 'name',
+            message: 'What is your name or company name? (Required)',
+            validate: nameInput => {
+                if (nameInput) {
+                    return true;
+                } else {
+                    console.log('Please enter your name or company name!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'title',
             message: 'What is the name of application? (Required)',
             validate: titleInput => {
                 if (titleInput) {
@@ -19,12 +35,12 @@ const questions = () => {
         {
             type: 'input',
             name: 'description',
-            message: 'Enter description of your application. (Required)',
+            message: 'Provide a description of your application. (Required)',
             validate: descInput => {
                 if (descInput) {
                     return true;
                 } else {
-                    console.log('Please enter description of your application!');
+                    console.log('Please enter application description!');
                     return false;
                 }
             }
@@ -45,7 +61,7 @@ const questions = () => {
         {
             type: 'input',
             name: 'usage',
-            message: 'Provide instructions and examples for use. Include screenshots as needed. (Required)',
+            message: 'Provide instructions and examples for use of the application. Include screenshots as needed. (Required)',
             validate: usageInput => {
                 if (usageInput) {
                     return true;
@@ -56,14 +72,64 @@ const questions = () => {
             }
         },
         {
+            type: 'confirm',
+            name: 'creditLinks',
+            message: 'Did you work with any collaborators on your application?',
+            default: false
+        },
+        {
             type: 'input',
-            name: 'credits',
-            message: 'List your collaborators, if any, with links to their GitHub profiles. (Required) ',
-            validate: creditsInput => {
-                if (creditsInput) {
+            name: 'link',
+            message: 'Enter the GitHub profile links for your collaborators.',
+            when: ({ creditLinks }) => {
+                if (creditLinks === true) {
                     return true;
                 } else {
-                    console.log('Please provide credits and links, if any!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'list',
+            name: 'license',
+            message: 'What licenses did you use for your application? (Check all that apply) ',
+            choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: 'Provide tests for your application and examples on how to run them. (Required)',
+            validate: testsInput => {
+                if (testsInput) {
+                    return true;
+                } else {
+                    console.log('Please provide tests and examples of how to run them!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'githubName',
+            message: 'What is your GitHub username? (Required)',
+            validate: githubNameInput => {
+                if (githubNameInput) {
+                    return true;
+                } else {
+                    console.log('Please provide your GitHub username!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'What is your email address? (Required)',
+            validate: emailInput => {
+                if (emailInput) {
+                    return true;
+                } else {
+                    console.log('Please provide your email address!');
                     return false;
                 }
             }
@@ -73,12 +139,19 @@ const questions = () => {
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+};
 
 // function to initialize program
 function init() {
-    questions();
-}
+    questions()
+    .then(answers => {
+        writeToFile('README.md', generateMarkdown({...answers}))
+    })
+    .catch(err => {
+        console.log(err);
+    })
+};  
 
 // function call to initialize program
 init();

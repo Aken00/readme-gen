@@ -44,11 +44,9 @@ If you used any third-party assets that require attribution, list the creators w
 If you followed tutorials, include links to those here as well.
 
 
-
 ## License
 
 The last section of a good README is a license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, use [https://choosealicense.com/](https://choosealicense.com/)
-
 
 ---
 
@@ -59,7 +57,6 @@ The last section of a good README is a license. This lets other developers know 
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
 Badges aren't _necessary_, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
 
 ## Contributing
 
