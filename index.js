@@ -3,7 +3,7 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const fs = require('fs');
 const path = require('path');
 
-// array of questions for user
+// array of questions for user using inquirer
 const questions = () => {
     return inquirer.prompt([
         {
@@ -76,6 +76,18 @@ const questions = () => {
             name: 'creditLinks',
             message: 'Did you work with any collaborators on your application? (Required)',
             default: false
+        },
+        {
+            type: 'input',
+            name: 'collabName',
+            message: 'Enter the collaborators full name.',
+            when: ({ creditLinks }) => {
+                if (creditLinks) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         },
         {
             type: 'input',

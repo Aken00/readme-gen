@@ -24,8 +24,8 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Contributing
-  ${data.creditLinks}
-  ${data.link}
+  ${data.collabName || ''}
+  ${data.link || ''}
 
   ## License
   Copyright (c) ${data.name}. All rights reserved.
@@ -35,10 +35,10 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  * Github Username: ${data.githubName}
+  * GitHub Username: ${data.githubName}
   * [GitHub Profile](https://www.github.com/${data.githubName})
   
-  * Please email me at ${data.email} with any additional questions if you have any. I'm always here to help!
+  * Please email me at ${data.email} with any questions you may have. I'm always here to help!
   `;
 }
 
