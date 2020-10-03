@@ -1,10 +1,10 @@
 
-  # TuneOut
+  # tuneout
 
   ![License](https://img.shields.io/badge/license-GNU AGPLv3-blue.svg)
 
   ## Description
-  Description
+  description
 
   ## Table of Contents
   
@@ -16,24 +16,25 @@
   * [Questions](#questions)
 
   ## Installation
-  Steps
+  steps
 
   ## Usage
-  Screenshots
+  screenshots
 
   ## Contributing
+  false
   undefined
 
   ## License
-  Copyright (c) Brian Spiewak. All rights reserved.
+  Copyright (c) brian spiewak. All rights reserved.
   This application is licensed under GNU AGPLv3
 
   ## Tests
-  Test
+  tests
 
   ## Questions
   * Github Username: bspiewak6
   * [GitHub Profile](https://www.github.com/bspiewak6)
   
-   * Please contact me at bspiewak6@gmail.com with any additional questions if you have any. I'm always here to help!
+  * Please email me at bspiewak6@gmail.com with any additional questions if you have any. I'm always here to help!
   

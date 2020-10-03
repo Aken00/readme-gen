@@ -74,7 +74,7 @@ const questions = () => {
         {
             type: 'confirm',
             name: 'creditLinks',
-            message: 'Did you work with any collaborators on your application?',
+            message: 'Did you work with any collaborators on your application? (Required)',
             default: false
         },
         {
@@ -82,7 +82,7 @@ const questions = () => {
             name: 'link',
             message: 'Enter the GitHub profile links for your collaborators.',
             when: ({ creditLinks }) => {
-                if (creditLinks === true) {
+                if (creditLinks) {
                     return true;
                 } else {
                     return false;
