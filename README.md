@@ -1,10 +1,10 @@
 
-  # tuneout
+  # readme generator
 
   ![License](https://img.shields.io/badge/license-GNU AGPLv3-blue.svg)
 
   ## Description
-  desc
+  description
 
   ## Table of Contents
   
@@ -19,15 +19,15 @@
   steps
 
   ## Usage
-  screenshot
+  screenshots
 
   ## Contributing
-  Olivia
-  github.io/olivia
+  brian spiewak
+  github.io/bspiewak6
 
   ## License
-  Copyright (c) brian. All rights reserved.
-  This application is licensed under GNU AGPLv3
+  - Copyright (c) brian. All rights reserved.
+  - This application is licensed under GNU AGPLv3
 
   ## Tests
   tests
