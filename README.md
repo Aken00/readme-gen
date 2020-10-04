@@ -38,7 +38,7 @@ THEN I am taken to the corresponding section of the README <br />
 ## Technologies
 1. JavaScript
 2. Node.js
-3. Inquirer NPM
+3. Inquirer.js
 
 ## Screenshots
 ![Screenshot of command line with questions and answers](./assets/images/Screenshot1.png)
@@ -49,5 +49,5 @@ THEN I am taken to the corresponding section of the README <br />
 
 ## Links
 * [README Generator Walkthrough Video]()
-* [README Generated File]()
+* [README Generated File called Generate.md](https://drive.google.com/file/d/1iVBkwuHtlqmxUxDIQlBdLDv2CPCbYN98/view?usp=sharing)
 * [README Generator Repository](https://github.com/bspiewak6/readme-gen)

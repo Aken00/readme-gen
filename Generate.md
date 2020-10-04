@@ -17,7 +17,7 @@
   * [Questions](#questions)
 
   ## Installation
-  Require the file system, use inquirer npm to prompt the user with questions and then initialize the README using writeToFile function
+  Require the file system, use inquirer.js npm to prompt the user with questions and then initialize the README using writeToFile function
 
   ## Usage
   Utilize this application for a quick and easy way to generate a README  
@@ -27,7 +27,7 @@
   ## Credits
   Full Name  
 
-  www.github.io/FullName
+  https://github.com/full-name
 
   ## License
   Copyright (c) Brian Spiewak. All rights reserved.  
@@ -35,10 +35,10 @@
   This application is licensed under MIT License
 
   ## Contributing
-  No guidelines right now
+  No guidelines for contributors at this time
 
   ## Tests
-  No tests have been run yet
+  No tests have been run at this time
 
   ## Questions
   * GitHub Username: bspiewak6  
