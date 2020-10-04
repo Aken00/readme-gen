@@ -48,6 +48,6 @@ THEN I am taken to the corresponding section of the README <br />
 ![Screenshot of Generate.md README file shown in a browser](./assets/images/Screenshot5.png)
 
 ## Links
-* [README Generator Walkthrough Video]()
-* [README Generated File called Generate.md](https://drive.google.com/file/d/1iVBkwuHtlqmxUxDIQlBdLDv2CPCbYN98/view?usp=sharing)
+* [README Generator Walkthrough Video](https://drive.google.com/file/d/1yhnQlJFowjm7dW-_PWa2iI1wgJGeksWI/view?usp=sharing)
+* [README Generated File called Generate.md](https://drive.google.com/file/d/1RlwlgagkcVMaVh5RQgQo4p_Y1cWQ1OtL/view)
 * [README Generator Repository](https://github.com/bspiewak6/readme-gen)

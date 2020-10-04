@@ -20,7 +20,7 @@
   Require the file system, use inquirer.js npm to prompt the user with questions and then initialize the README using writeToFile function
 
   ## Usage
-  Utilize this application for a quick and easy way to generate a README  
+  Utilize this application for a quick and easy way to generate README  
   
   > ![Test Screenshot](./assets/images/test.png) 
 
