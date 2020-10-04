@@ -1,10 +1,10 @@
 
-  # readme generator
+  # b
 
-  ![License](https://img.shields.io/badge/license-GNU AGPLv3-blue.svg)
+  ![License](https://img.shields.io/badge/license-GNU%20AGPLv3-blue.svg)
 
   ## Description
-  description
+  b
 
   ## Table of Contents
   
@@ -16,25 +16,24 @@
   * [Questions](#questions)
 
   ## Installation
-  steps
+  step
 
   ## Usage
-  screenshots
+  screenshot
 
   ## Contributing
-  brian spiewak
-  github.io/bspiewak6
+  brian spiewak </br>
+  github.com/bspiewak6
 
   ## License
-  - Copyright (c) brian. All rights reserved.
-  - This application is licensed under GNU AGPLv3
+  Copyright (c) brian. All rights reserved. </br>
+  This application is licensed under GNU AGPLv3
 
   ## Tests
-  tests
+  test
 
   ## Questions
-  * GitHub Username: bspiewak6
-  * [GitHub Profile](https://www.github.com/bspiewak6)
-  
-  * Please email me at bspiewak6@gmail.com with any questions you may have. I'm always here to help!
+  GitHub Username: bspiewak6
+  [GitHub Profile](https://www.github.com/bspiewak6)
+  Please email me at bspiewak6@gmail.com with any questions you may have. I'm always here to help!
   
