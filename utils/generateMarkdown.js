@@ -22,9 +22,11 @@ function generateMarkdown(data) {
   ${data.installation}
 
   ## Usage
-  ${data.usage}
+  ${data.usage}  
+  
+  > ${![data.altScreen] || ''}(${data.pathScreen || ''}) 
 
-  ## Contributing
+  ## ${data.creditTitle || ''}
   ${data.collabName || ''}  
 
   ${data.link || ''}

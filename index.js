@@ -19,7 +19,7 @@ const questions = () => {
                     return false;
                 }
             }
-        },
+        }, 
         {
             type: 'input',
             name: 'title',
@@ -74,9 +74,51 @@ const questions = () => {
         },
         {
             type: 'confirm',
+            name: 'screenConfirm',
+            message: 'Do you want to include screenshots of your application?',
+            default: false
+        },
+        {
+            type: 'input',
+            name: 'altScreen',
+            message: 'Enter alt text for screenshot. This will assist with accessbility.',
+            when: ({ screenConfirm }) => {
+                if (screenConfirm) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'pathScreen',
+            message: 'Enter the file path of where in your repo the screenshot is saved.',
+            when: ({ screenConfirm }) => {
+                if (screenConfirm) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'confirm',
+            name: 'creditTitle',
+            message: 'Do you want to include a contributing section? (Required)',
+            default: false
+        },
+        {
+            type: 'confirm',
             name: 'creditLinks',
             message: 'Did you work with any collaborators on your application? (Required)',
-            default: false
+            when: ({ creditTitle }) => {
+                if (creditTitle === true) {
+                    return 'Contributing';
+                } else {
+                    return ``;
+                }
+            }
         },
         {
             type: 'input',
