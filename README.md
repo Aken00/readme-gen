@@ -1,10 +1,10 @@
 
-  # README Generator
+  # Readme Generator
 
   ![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 
   ## Description
-  This application was designed for any user to quickly create a professional README for a new project 
+  This is a quick and easy way to generate a README for any project you're working on
 
   ## Table of Contents
   
@@ -16,24 +16,26 @@
   * [Questions](#questions)
 
   ## Installation
-  The steps to install the project are to initialize the file system, install inquirer package and use the command line to dynamically create the README
+  The steps to install the project is using the Node.js package Inquirer as shown above on the left side. Then use node index.js to run the application in the command-line
 
   ## Usage
-  Once the packages are installed, you can use node index.js to populate the questions that the user will answer in the command line
+  As you see here, the application is running and generating questions for the user to answer and then it will run through the markdown and use the answers to fill out the README
 
   ## Contributing
-   </br>
+    
+
   
 
   ## License
-  Copyright (c) Brian Spiewak. All rights reserved. </br>
+  Copyright (c) Brian Spiewak. All rights reserved.  
+
   This application is licensed under MIT License
 
   ## Tests
-  To test the application you can check all answers and use the confirm questions to see how the application will create the README. Just make sure to use npm install to get them to run on your local computer.
+  You can test this by answering different questions and using the npm install on your own machine to put in inquirer and initialize the program
 
   ## Questions
-  GitHub Username: bspiewak6 </br>
-  [GitHub Profile](https://www.github.com/bspiewak6) </br>
-  Please email me at bspiewak6@gmail.com with any questions you may have. I'm always here to help!
+  * GitHub Username: bspiewak6  
+  * [GitHub Profile](https://www.github.com/bspiewak6)
+  * Please email me at bspiewak6@gmail.com with any questions you may have. I'm always here to help!
   

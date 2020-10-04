@@ -25,18 +25,20 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## Contributing
-  ${data.collabName || ''} </br>
+  ${data.collabName || ''}  
+
   ${data.link || ''}
 
   ## License
-  Copyright (c) ${data.name}. All rights reserved. </br>
+  Copyright (c) ${data.name}. All rights reserved.  
+
   This application is licensed under ${data.license}
 
   ## Tests
   ${data.tests}
 
   ## Questions
-  * GitHub Username: ${data.githubName}
+  * GitHub Username: ${data.githubName}  
   * [GitHub Profile](https://www.github.com/${data.githubName})
   * Please email me at ${data.email} with any questions you may have. I'm always here to help!
   `;
