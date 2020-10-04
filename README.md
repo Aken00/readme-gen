@@ -49,4 +49,5 @@ THEN I am taken to the corresponding section of the README <br />
 
 ## Links
 * [README Generator Walkthrough Video]()
+* [README Generated File]()
 * [README Generator Repository](https://github.com/bspiewak6/readme-gen)
