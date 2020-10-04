@@ -36,8 +36,8 @@ function generateMarkdown(data) {
   ${data.tests}
 
   ## Questions
-  GitHub Username: ${data.githubName}
-  [GitHub Profile](https://www.github.com/${data.githubName})
+  GitHub Username: ${data.githubName} </br>
+  [GitHub Profile](https://www.github.com/${data.githubName}) </br>
   Please email me at ${data.email} with any questions you may have. I'm always here to help!
   `;
 }
