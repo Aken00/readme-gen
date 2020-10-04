@@ -25,9 +25,9 @@
   > ![Test Screenshot](./assets/images/test.png) 
 
   ## Credits
-    
+  Full Name  
 
-  
+  www.github.io/FullName
 
   ## License
   Copyright (c) Brian Spiewak. All rights reserved.  

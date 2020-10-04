@@ -43,6 +43,9 @@ THEN I am taken to the corresponding section of the README <br />
 ## Screenshots
 ![Screenshot of command line with questions and answers](./assets/images/Screenshot1.png)
 ![Screenshot of Generate.md README file generated from the answers in the application](./assets/images/Screenshot2.png)
+![Screenshot of Generate.md README file shown in a browser](./assets/images/Screenshot3.png)
+![Screenshot of Generate.md README file shown in a browser](./assets/images/Screenshot4.png)
+![Screenshot of Generate.md README file shown in a browser](./assets/images/Screenshot5.png)
 
 ## Links
 * [README Generator Walkthrough Video]()
