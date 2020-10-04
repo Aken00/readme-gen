@@ -40,6 +40,10 @@ THEN I am taken to the corresponding section of the README <br />
 2. Node.js
 3. Inquirer NPM
 
+## Screenshots
+![Screenshot of command line with questions and answers](./assets/images/ScreenShot1.png)
+![Screenshot of Generate.md README file generated from the answers in the application](./assets/images/ScreenShot2.png)
+
 ## Links
 * [README Generator Walkthrough Video]()
 * [README Generator Repository](https://github.com/bspiewak6/readme-gen)

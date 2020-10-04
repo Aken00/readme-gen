@@ -1,10 +1,10 @@
 
-  # App
+  # README Generator
 
-  ![License](https://img.shields.io/badge/license-GNU%20AGPLv3-blue.svg)
+  ![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)
 
   ## Description
-  desc
+  Create high-quality README for application
 
   ## Table of Contents
   
@@ -17,31 +17,31 @@
   * [Questions](#questions)
 
   ## Installation
-  steps
+  Require the file system, use inquirer npm to prompt the user with questions and then initialize the README using writeToFile function
 
   ## Usage
-  instructions  
+  Utilize this application for a quick and easy way to generate a README  
   
-  > ![alt](./assets/images/test.png) 
+  > ![Test Screenshot](./assets/images/test.png) 
 
   ## Credits
-  Peyton  
+    
 
-  peyton.com
+  
 
   ## License
-  Copyright (c) Brian. All rights reserved.  
+  Copyright (c) Brian Spiewak. All rights reserved.  
 
-  This application is licensed under GNU AGPLv3
+  This application is licensed under MIT License
 
   ## Contributing
-  no guidelines
+  No guidelines right now
 
   ## Tests
-  no tests yet
+  No tests have been run yet
 
   ## Questions
-  * GitHub Username: bspiewak6
+  * GitHub Username: bspiewak6  
   * [GitHub Profile](https://www.github.com/bspiewak6)
   * Please email me at bspiewak6@gmail.com with any questions you may have. I'm always here to help!
   

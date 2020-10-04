@@ -209,7 +209,7 @@ function init() {
         .then(data => {
             console.log(data);
             writeToFile('Generate.md', data);
-        });
+    });
 };
 
 // function call to initialize program
