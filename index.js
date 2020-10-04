@@ -104,21 +104,9 @@ const questions = () => {
         },
         {
             type: 'confirm',
-            name: 'creditTitle',
-            message: 'Do you want to include a contributing section? (Required)',
-            default: false
-        },
-        {
-            type: 'confirm',
             name: 'creditLinks',
             message: 'Did you work with any collaborators on your application? (Required)',
-            when: ({ creditTitle }) => {
-                if (creditTitle === true) {
-                    return 'Contributing';
-                } else {
-                    return ``;
-                }
-            }
+            default: false
         },
         {
             type: 'input',
@@ -152,8 +140,21 @@ const questions = () => {
         },
         {
             type: 'input',
+            name: 'contributing',
+            message: 'If you created an application and would like other developers to contribute, please provide any guidelines.',
+            validate: contributeInput => {
+                if (contributeInput) {
+                    return true;
+                } else {
+                    console.log('Please provide guidelines for contributors!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
             name: 'tests',
-            message: 'Provide tests for your application and examples on how to run them. (Required)',
+            message: 'Provide tests for your application and examples on how to run them.',
             validate: testsInput => {
                 if (testsInput) {
                     return true;
@@ -193,20 +194,23 @@ const questions = () => {
 };
 
 // function to write README file
-function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join(process.cwd(), fileName), data)
+function writeToFile(fileName, questions) {
+    fileName = fs.writeFile('Generate.md', generateMarkdown((questions)), function (err) {
+        if (err) {
+            console.log('Error: ' + err);
+        } else {
+            console.log('= README created as Generate.md! =');
+        }
+    });
 };
-
 // function to initialize program
 function init() {
     questions()
-    .then(answers => {
-        writeToFile('README.md', generateMarkdown({...answers}))
-    })
-    .catch(err => {
-        console.log(err);
-    })
-};  
+        .then(data => {
+            console.log(data);
+            writeToFile('Generate.md', data);
+        });
+};
 
 // function call to initialize program
 init();

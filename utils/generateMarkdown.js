@@ -13,8 +13,9 @@ function generateMarkdown(data) {
   
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributing](#contributing)
+  * [Credits](#credits)
   * [License](#license)
+  * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
 
@@ -24,9 +25,9 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}  
   
-  > ${![data.altScreen] || ''}(${data.pathScreen || ''}) 
+  > ![${data.altScreen || ''}](${data.pathScreen || ''}) 
 
-  ## ${data.creditTitle || ''}
+  ## Credits
   ${data.collabName || ''}  
 
   ${data.link || ''}
@@ -35,6 +36,9 @@ function generateMarkdown(data) {
   Copyright (c) ${data.name}. All rights reserved.  
 
   This application is licensed under ${data.license}
+
+  ## Contributing
+  ${data.contributing || ''}
 
   ## Tests
   ${data.tests}
